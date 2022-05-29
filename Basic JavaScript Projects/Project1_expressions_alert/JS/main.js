@@ -24,4 +24,8 @@ function My_First_Function() {                              //Button function
                                                             //elementFromPoint with the "button text" id
 }
 
-window.alert("Sup!")                                        //Window that pops up whensite first loads
+window.alert("Sup!");                                       //Window that pops up whensite first loads
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";//Double-click functiion
+  }
