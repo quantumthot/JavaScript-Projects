@@ -1,12 +1,12 @@
-function countdown() {
+function countdown() {                                          //Countdown function
     var seconds = document.getElementById("seconds").value;
 
-    function tick() {
+function tick() {                                               //A tick is set to go down in 1 second intervals
         seconds = seconds - 1;
         timer.innerHTML = seconds;
-        var time = setTimeout(tick, 1000);
+        var time = setTimeout(tick, 1000);                      //Each tick is 1000 ms or 1 sec
         if (seconds == -1) {
-            alert("Time's up!");
+            alert("Time's up!");                                //Time up alert 
             clearTimeout(time);
             timer.innerHTML = "";
         }
